@@ -116,7 +116,7 @@ ZMQPP_COMPARABLE_ENUM socket_option {
 	heartbeat_timeout         = ZMQ_HEARTBEAT_TIMEOUT, /*< ZMPT heartbeat timeout - set only */
 	heartbeat_ttl             = ZMQ_HEARTBEAT_TTL, /*< ZMPT heartbeat interval - set only */
 	invert_matching           = ZMQ_INVERT_MATCHING, /*< ZMPT invert state for PUB/SUB message filters */
-  metadata                  = ZMQ_METADATA, /*< socket metadata key-value pairs */
+	metadata                  = ZMQ_METADATA, /*< socket metadata key-value pairs */
 	multicast_max_tpdu        = ZMQ_MULTICAST_MAXTPDU, /*< Max size for multicast messages */
 	socks_proxy               = ZMQ_SOCKS_PROXY, /*< SOCKS5 proxy address for routing tcp connections */
 	stream_notify             = ZMQ_STREAM_NOTIFY, /*< Event state on connect/disconnection of peers */
