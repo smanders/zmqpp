@@ -640,6 +640,7 @@ void socket::set(socket_option const option, char const* value, size_t const len
 #if (ZMQ_VERSION_MAJOR > 4 || ZMQ_VERSION_MAJOR == 4 && ZMQ_VERSION_MINOR >= 2)
 	case socket_option::gssapi_principal:
 	case socket_option::gssapi_service_principal:
+	case socket_option::metadata:
 	case socket_option::socks_proxy:
 	case socket_option::xpub_welcome_message:
 #endif
@@ -868,6 +869,7 @@ void socket::get(socket_option const option, std::string& value) const
 #if (ZMQ_VERSION_MAJOR > 4 || ZMQ_VERSION_MAJOR == 4 && ZMQ_VERSION_MINOR >= 2)
 	case socket_option::gssapi_principal:
 	case socket_option::gssapi_service_principal:
+	case socket_option::metadata:
 	case socket_option::socks_proxy:
 #endif
 		if(0 != zmq_getsockopt(_socket, static_cast<int>(option), buffer.data(), &size))
